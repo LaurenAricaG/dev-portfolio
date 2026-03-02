@@ -2,7 +2,39 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* funte tamaño color */
-@theme {
-  --color-primary: #22c55e;
+:root {
+  --background: #171717;
+  --foreground: #eeeeee;
+
+  /* Header Colors */
+  --header-bg: #343639;
+
+  /* Input */
+  --input-bg: #1f1e1e;
+
+  /* Hero Section Colors */
+  --hero-text-muted: #6f6f6f;
+  --button-bg: #2a2a2a;
+  --button-bg-hover: #3a3a3a;
+  --status-available: #22c55e;
+  --text-secondary: #d1d5db;
+  --text-description: #9ca3af;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-header: var(--header-bg);
+  --color-input-bg: var(--input-bg);
+  --color-hero-muted: var(--hero-text-muted);
+  --color-button: var(--button-bg);
+  --color-button-hover: var(--button-bg-hover);
+  --color-status: var(--status-available);
+  --color-secondary: var(--text-secondary);
+  --color-description: var(--text-description);
+  --font-sans: var(--font-dm-sans);
+}
+
+body {
+  font-family: var(--font-sans);
 }
