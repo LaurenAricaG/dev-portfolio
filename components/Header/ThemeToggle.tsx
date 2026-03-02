@@ -33,7 +33,7 @@ const ThemeToggle = () => {
   return (
     <button
       className={cn(
-        "w-12 h-12 rounded-xl flex items-center justify-center transition-colors duration-200 group relative",
+        "w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-200 group relative",
         "text-gray-600 dark:text-gray-100 hover:bg-black/5 dark:hover:bg-white/10 cursor-pointer",
       )}
       onClick={toggleTheme}
