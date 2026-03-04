@@ -19,14 +19,15 @@ export default function RootLayout({
     <html lang="es">
       <body
         className={cn(
-          "antialiased bg-foreground text-background dark:text-foreground dark:bg-background",
+          "min-h-screen flex flex-col antialiased bg-foreground text-background dark:bg-background dark:text-foreground",
           dmSans.className,
         )}
       >
         <Header />
-        <main className="py-10">
-          <Container>{children}</Container>
-        </main>
+
+        {/* MAIN ocupa el espacio restante */}
+        <main className="flex-1 flex flex-col">{children}</main>
+
         <Footer />
       </body>
     </html>

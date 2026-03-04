@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import useTheme from "@/store/useTheme";
 import { cn } from "@/utils/cn.utils";
-import { FaRegMoon, FaRegSun } from "react-icons/fa";
+import { FiMoon, FiSun } from "react-icons/fi";
 
 const ThemeToggle = () => {
   const theme = useTheme((state) => state.theme);
@@ -33,16 +33,16 @@ const ThemeToggle = () => {
   return (
     <button
       className={cn(
-        "w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-200 group relative",
+        "p-3 rounded-full flex items-center justify-center transition-colors duration-200 group relative",
         "text-gray-600 dark:text-gray-100 hover:bg-black/5 dark:hover:bg-white/10 cursor-pointer",
       )}
       onClick={toggleTheme}
       aria-label="Cambiar tema"
     >
       {theme === "light" ? (
-        <FaRegMoon className="text-slate-800" />
+        <FiMoon className="text-slate-800" />
       ) : (
-        <FaRegSun className="text-slate-200 " />
+        <FiSun className="text-slate-200 " />
       )}
     </button>
   );

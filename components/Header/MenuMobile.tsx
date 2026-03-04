@@ -23,10 +23,10 @@ const MenuMobile = ({ isOpen, onClose }: MenuMobileProps) => {
         transition-transform duration-300 sm:hidden
         ${isOpen ? "translate-x-0" : "translate-x-full"}`}
       >
-        <div className="flex items-center justify-end p-6 border-b border-gray-200 dark:border-white/10">
+        <div className="flex items-center justify-end p-3 border-b border-gray-200 dark:border-white/10">
           <button
             onClick={onClose}
-            className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+            className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition cursor-pointer"
           >
             <FaTimes className="text-gray-500 dark:text-gray-400 text-lg" />
           </button>

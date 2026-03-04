@@ -13,12 +13,12 @@ const Header = () => {
     <>
       <header className="relative border-b border-gray-200 dark:border-white/10">
         <Container>
-          <div className="flex items-center justify-between py-5">
+          <div className="flex items-center justify-between py-4">
             <h1 className="uppercase font-semibold tracking-wide">
               Lauren Arica
             </h1>
 
-            <div className="flex items-center gap-3 sm:gap-10">
+            <div className="flex items-center gap-3 md:gap-10">
               <Navbar onOpenMenu={() => setMenuOpen(true)} />
               <ThemeToggle />
             </div>
