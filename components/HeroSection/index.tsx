@@ -1,4 +1,9 @@
+"use client";
 import Container from "../layout/Container";
+import LinkButton from "../LinkButton";
+import { FiMail } from "react-icons/fi";
+import { HiDocumentText } from "react-icons/hi";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
@@ -16,7 +21,7 @@ const HeroSection = () => {
               inline-flex items-center gap-2 rounded-full
               border-2 border-status/10
               bg-status/5
-              px-4 py-2 text-xs font-medium tracking-wide
+              px-4 py-1 text-xs font-medium tracking-wide
               text-status
               backdrop-blur
             "
@@ -32,12 +37,51 @@ const HeroSection = () => {
             </span>
           </h1>
 
-          <p className="text-base md:text-lg max-w-2xl leading-relaxed mb-10 text-background/70 dark:text-foreground/80">
+          <p className="text-base md:text-lg max-w-3xl leading-relaxed mb-10 text-background/70 dark:text-foreground/80">
             Programar es tomar decisiones pensando en el futuro. La calidad nace
             de la claridad y la simplicidad: software fácil de entender,
             mantener y evolucionar con el tiempo.
           </p>
         </div>
+        <nav
+          className="flex flex-wrap items-center justify-center gap-5 mb-12"
+          aria-label="Enlaces de contacto y redes sociales"
+        >
+          <LinkButton
+            href="mailto:laurendavid159@gmail.com"
+            ariaLabel="Enviar correo electrónico a laurendavid159@gmail.com"
+            title="Contactar por email"
+            icon={FiMail}
+            label="Email"
+          />
+
+          <LinkButton
+            href="https://github.com/laurenaricag"
+            ariaLabel="Ver perfil de GitHub de Lauren Arica"
+            title="Visitar GitHub"
+            icon={FaGithub}
+            label="GitHub"
+            isExternal
+          />
+
+          <LinkButton
+            href="https://linkedin.com/in/lauren-arica-guerrero"
+            ariaLabel="Ver perfil de LinkedIn de Lauren Arica"
+            title="Visitar LinkedIn"
+            icon={FaLinkedinIn}
+            label="LinkedIn"
+            isExternal
+          />
+
+          <LinkButton
+            href=""
+            ariaLabel="Descargar currículum vitae en formato PDF"
+            title="Descargar CV"
+            icon={HiDocumentText}
+            label="CV"
+            isExternal
+          />
+        </nav>
       </Container>
     </section>
   );
