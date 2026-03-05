@@ -7,7 +7,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <section className=" relative isolate flex flex-1 items-center overflow-hidden bg-foreground dark:bg-background text-background dark:text-foreground pt-20 sm:pt-24 md:pt-0">
+    <section className=" relative isolate flex min-h-[calc(100vh-80px)] items-center overflow-hidden bg-foreground dark:bg-background text-background dark:text-foreground pt-20 sm:pt-24 md:pt-0">
       <Container>
         <div
           className="
