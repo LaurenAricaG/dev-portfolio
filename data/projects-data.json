@@ -1,0 +1,104 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "DevBoard",
+      "description": "Gestor de proyectos estilo Kanban diseñado para equipos de desarrollo. Permite crear tableros, organizar tareas y visualizar el progreso del proyecto en una interfaz clara y moderna.",
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS"],
+      "githubUrl": "https://github.com/example/devboard",
+      "liveUrl": "https://devboard.example.com",
+      "imageUrl": "/projects/image-clinicaenfoquesalud.webp",
+      "type": "FrontEnd"
+    },
+    {
+      "id": 2,
+      "title": "GitInsight",
+      "description": "Dashboard interactivo que analiza repositorios de GitHub y muestra estadísticas clave como commits, contribuciones y actividad reciente mediante visualizaciones dinámicas.",
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "JavaScript"],
+      "githubUrl": "",
+      "liveUrl": "https://gitinsight.example.com",
+      "imageUrl": "/projects/image-clinicaenfoquesalud.webp",
+      "type": "FrontEnd"
+    },
+    {
+      "id": 3,
+      "title": "HireTrack API",
+      "description": "API REST para gestionar postulaciones laborales. Permite registrar empresas, estados de entrevistas y notas personales, facilitando el seguimiento organizado de oportunidades.",
+      "technologies": ["Node.js", "Express", "PostgreSQL"],
+      "githubUrl": "https://github.com/example/hiretrack-api",
+      "liveUrl": "",
+      "imageUrl": "/projects/image-clinicaenfoquesalud.webp",
+      "type": "BackEnd"
+    },
+    {
+      "id": 4,
+      "title": "SnippetHub",
+      "description": "Aplicación completa para guardar y organizar fragmentos de código. Incluye sistema de etiquetas, búsqueda rápida y almacenamiento en la nube para reutilizar soluciones fácilmente.",
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS"],
+      "githubUrl": "https://github.com/example/snippethub",
+      "liveUrl": "https://snippethub.example.com",
+      "imageUrl": "/projects/image-clinicaenfoquesalud.webp",
+      "type": "FullStack"
+    },
+    {
+      "id": 5,
+      "title": "API Status Monitor",
+      "description": "Servicio backend que monitorea endpoints y registra tiempos de respuesta, errores y disponibilidad. Ideal para demostrar manejo de logs, métricas y monitoreo de servicios.",
+      "technologies": ["Node.js", "Express", "MongoDB"],
+      "githubUrl": "https://github.com/example/api-status-monitor",
+      "liveUrl": "",
+      "imageUrl": "/projects/image-clinicaenfoquesalud.webp",
+      "type": "BackEnd"
+    },
+    {
+      "id": 6,
+      "title": "LinkStack",
+      "description": "Plataforma para crear páginas de enlaces personalizadas similar a Linktree. Incluye panel de administración, personalización de perfil y gestión dinámica de enlaces.",
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB"],
+      "githubUrl": "https://github.com/example/linkstack",
+      "liveUrl": "https://linkstack.example.com",
+      "imageUrl": "/projects/image-clinicaenfoquesalud.webp",
+      "type": "FullStack"
+    },
+    {
+      "id": 7,
+      "title": "DevDocs Finder",
+      "description": "Buscador de documentación técnica que centraliza múltiples recursos para desarrolladores, permitiendo encontrar rápidamente guías, ejemplos y referencias.",
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS"],
+      "githubUrl": "https://github.com/example/devdocs-finder",
+      "liveUrl": "https://devdocs-finder.example.com",
+      "imageUrl": "/projects/image-clinicaenfoquesalud.webp",
+      "type": "FrontEnd"
+    },
+    {
+      "id": 8,
+      "title": "FeedbackLoop",
+      "description": "Sistema completo para recopilar feedback de usuarios. Permite enviar sugerencias, votar ideas y priorizar mejoras en productos digitales.",
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
+      "githubUrl": "https://github.com/example/feedbackloop",
+      "liveUrl": "https://feedbackloop.example.com",
+      "imageUrl": "/projects/image-clinicaenfoquesalud.webp",
+      "type": "FullStack"
+    },
+    {
+      "id": 9,
+      "title": "Auth Service",
+      "description": "Servicio backend para autenticación y autorización de usuarios utilizando JWT. Incluye registro, login, manejo de roles y protección de rutas.",
+      "technologies": ["Node.js", "Express", "PostgreSQL"],
+      "githubUrl": "https://github.com/example/auth-service",
+      "liveUrl": "",
+      "imageUrl": "/projects/image-clinicaenfoquesalud.webp",
+      "type": "BackEnd"
+    },
+    {
+      "id": 10,
+      "title": "DevAnalytics",
+      "description": "Panel de analíticas web que permite visualizar tráfico, interacción de usuarios y métricas clave en tiempo real mediante gráficos interactivos.",
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL"],
+      "githubUrl": "https://github.com/example/devanalytics",
+      "liveUrl": "https://devanalytics.example.com",
+      "imageUrl": "/projects/image-clinicaenfoquesalud.webp",
+      "type": "FullStack"
+    }
+  ]
+}
