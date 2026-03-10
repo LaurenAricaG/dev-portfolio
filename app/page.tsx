@@ -1,3 +1,4 @@
+import ExperienceSection from "@/components/ExperienceSection";
 import HeroSection from "@/components/HeroSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import TechStack from "@/components/TechStack";
@@ -7,6 +8,7 @@ const HomePage = () => {
     <>
       <HeroSection />
       <ProjectsSection />
+      <ExperienceSection />
       <TechStack />
     </>
   );

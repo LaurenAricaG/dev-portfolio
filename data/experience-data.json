@@ -1,0 +1,109 @@
+{
+  "experience": [
+    {
+      "id": 1,
+      "position": "Desarrollador Developer",
+      "company": "Enfoque Salud",
+      "period": "Oct 2025 — Dic 2025",
+      "duration": "",
+      "location": "Remoto",
+      "type": "Freelance",
+      "logo": "ES",
+      "accentColor": "#0ea5e9",
+      "current": true,
+      "websiteUrl": "",
+      "certificateUrl": "",
+      "responsibilities": [
+        "Desarrollo de interfaces frontend para un sistema web de gestión clínica, colaborando con el equipo de backend.",
+        "Creación de una biblioteca de componentes reutilizables para asegurar la consistencia visual y agilizar el desarrollo.",
+        "Implementación de formularios interactivos con validación de datos para el registro y edición eficiente de información.",
+        "Aplicación de buenas prácticas de diseño modular y estructura del frontend para optimizar la integración con la API."
+      ],
+      "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS"]
+    },
+    {
+      "id": 2,
+      "position": "Desarrollador Front-end",
+      "company": "Enfoque Salud",
+      "period": "May 2025 — Jun 2025",
+      "duration": "",
+      "location": "Remoto",
+      "type": "Freelance",
+      "logo": "ES",
+      "accentColor": "#0ea5e9",
+      "current": false,
+      "websiteUrl": "",
+      "certificateUrl": "",
+      "responsibilities": [
+        "Diseño y desarrollo de una página web para una clínica utilizando React y Next.js.",
+        "Desarrollo de interfaces modernas con Tailwind CSS, priorizando una experiencia de usuario clara y atractiva.",
+        "Creación de componentes reutilizables y estructura modular para mejorar la mantenibilidad y escalabilidad del frontend.",
+        "Aplicación de buenas prácticas de SEO técnico para optimizar la visibilidad y el posicionamiento de la página.",
+        "Mantenimiento del sitio web y despliegue de la aplicación en entorno de producción."
+      ],
+      "technologies": ["React", "Next.js", "Tailwind CSS", "SEO", "Vercel"]
+    },
+    {
+      "id": 3,
+      "position": "Desarrollador Full-Stack",
+      "company": "Greta Labs",
+      "period": "Sep 2024 — Dic 2024",
+      "duration": "",
+      "location": "Remoto",
+      "type": "Full-time",
+      "logo": "GL",
+      "accentColor": "#8b5cf6",
+      "current": false,
+      "websiteUrl": "",
+      "certificateUrl": "",
+      "responsibilities": [
+        "Participé en el diseño y desarrollo de un sistema de gestión de planes estratégicos.",
+        "Contribuí al desarrollo del backend utilizando Django y MySQL, implementando APIs para la comunicación entre servicios.",
+        "Colaboré con otros desarrolladores en la implementación del frontend utilizando React para crear una interfaz funcional."
+      ],
+      "technologies": ["React", "Django", "MySQL", "Python"]
+    },
+    {
+      "id": 4,
+      "position": "Supervisor de Soporte Técnico",
+      "company": "Conect System E.I.R.L",
+      "period": "Ene 2024 — Abr 2024",
+      "duration": "",
+      "location": "Presencial",
+      "type": "Full-time",
+      "logo": "CS",
+      "accentColor": "#f59e0b",
+      "current": false,
+      "websiteUrl": "",
+      "certificateUrl": "",
+      "responsibilities": [
+        "Atendí y resolví solicitudes de soporte de manera efectiva de forma presencial y en línea.",
+        "Realicé mantenimiento correctivo y preventivo en equipos informáticos.",
+        "Instalé y configuré softwares según las necesidades del negocio.",
+        "Proporcioné capacitación básica sobre los programas utilizados a nuevos usuarios.",
+        "Realicé reportes en SQL según los requerimientos solicitados."
+      ],
+      "technologies": ["SQL", "Windows Server", "Redes"]
+    },
+    {
+      "id": 5,
+      "position": "Prácticas — Jefatura de TI",
+      "company": "Grupo Ases Peru S.A",
+      "period": "Jul 2023 — Dic 2023",
+      "duration": "",
+      "location": "Presencial",
+      "type": "Internship",
+      "logo": "GA",
+      "accentColor": "#10b981",
+      "current": false,
+      "websiteUrl": "",
+      "certificateUrl": "",
+      "responsibilities": [
+        "Desarrollé el módulo de usuarios, implementando funcionalidades para el acceso al sistema.",
+        "Participé en el desarrollo del módulo de proyectos y ventas para el CRM.",
+        "Implementé una nueva interfaz de usuario para la gestión de egresos, optimizando la usabilidad."
+      ],
+      "technologies": ["React", "Node.js", "MySQL"]
+    }
+  ]
+}
