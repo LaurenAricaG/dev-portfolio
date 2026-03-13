@@ -1,3 +1,4 @@
+import ContactSection from "@/components/ContactSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import HeroSection from "@/components/HeroSection";
 import ProjectsSection from "@/components/ProjectsSection";
@@ -10,6 +11,7 @@ const HomePage = () => {
       <ProjectsSection />
       <ExperienceSection />
       <TechStack />
+      <ContactSection />
     </>
   );
 };
