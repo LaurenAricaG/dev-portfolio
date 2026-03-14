@@ -6,10 +6,10 @@ import { BiMapPin } from "react-icons/bi";
 const ContactSection = () => {
   return (
     <section id="contact" className="mt-20">
-      <Container>
+      <Container className="py-10">
         <Title label="contacto" title="Generemos" subtitle="valor juntos" />
 
-        <div className="mt-10 rounded-2xl border border-background/15 dark:border-white/15 bg-[#f0f0ef] dark:bg-background p-5 md:p-10">
+        <div className="rounded-2xl border border-background/15 dark:border-white/15 bg-[#f0f0ef] dark:bg-background p-5 md:p-10">
           <h3 className="text-xl font-semibold text-background dark:text-foreground mb-8">
             Envíanos un mensaje
           </h3>
