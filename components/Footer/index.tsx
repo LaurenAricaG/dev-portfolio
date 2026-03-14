@@ -3,7 +3,7 @@ import Container from "../layout/Container";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-foreground dark:bg-background border-t border-background/10 dark:border-white/10 mt-20">
+    <footer className="bg-foreground dark:bg-background border-t border-background/10 dark:border-white/10 mt-15">
       <Container className="py-12 text-center ">
         <div className="hidden" aria-hidden="true">
           <h2>Lauren Arica - Desarrollador Full Stack en Perú</h2>
