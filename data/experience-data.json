@@ -2,7 +2,7 @@
   "experience": [
     {
       "id": 1,
-      "position": "Desarrollador Developer",
+      "position": "Desarrollador Front-end",
       "company": "Enfoque Salud",
       "period": "Oct 2025 — Dic 2025",
       "duration": "",
@@ -10,7 +10,7 @@
       "type": "Freelance",
       "logo": "ES",
       "accentColor": "#0ea5e9",
-      "current": true,
+      "current": false,
       "websiteUrl": "",
       "certificateUrl": "",
       "responsibilities": [
