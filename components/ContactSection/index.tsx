@@ -5,7 +5,7 @@ import { BiMapPin } from "react-icons/bi";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="mt-20">
+    <section id="contact" className="pt-15">
       <Container className="py-10">
         <Title label="contacto" title="Generemos" subtitle="valor juntos" />
 

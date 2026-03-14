@@ -9,7 +9,7 @@ const ProjectsSection = () => {
   const previewProjects = projects.slice(0, 4);
 
   return (
-    <section id="projects" className="mt-20">
+    <section id="projects" className="pt-15">
       <Container className="py-10">
         <Title label="Portafolio" title="Mis" subtitle="Proyectos" />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">

@@ -17,7 +17,7 @@ const ExperienceSection = () => {
     <section
       ref={sectionRef}
       id="about"
-      className="relative bg-foreground dark:bg-background overflow-hidden mt-20"
+      className="relative bg-foreground dark:bg-background overflow-hidden pt-15"
     >
       <Container className="py-10">
         <Title label="carrera" title="Experiencia" subtitle="Profesional" />
