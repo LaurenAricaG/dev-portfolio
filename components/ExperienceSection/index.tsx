@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import type { Experience } from "@/types/experience.types";
 import experiencesData from "@/data/experience-data.json";
 import CardExperience from "./CardExperience";
@@ -12,19 +12,14 @@ const experiences = experiencesData.experience as Experience[];
 
 const ExperienceSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end end"],
-  });
-  const bgOpacity = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
 
   return (
     <section
       ref={sectionRef}
-      id="experience"
-      className="relative bg-foreground dark:bg-background overflow-hidden pt-20"
+      id="about"
+      className="relative bg-foreground dark:bg-background overflow-hidden mt-20"
     >
-      <Container>
+      <Container className="py-10">
         <Title label="carrera" title="Experiencia" subtitle="Profesional" />
         <motion.div className="pointer-events-none absolute inset-0" />
 

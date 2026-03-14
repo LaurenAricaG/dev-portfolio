@@ -10,11 +10,11 @@ const allTech = [...technologies, ...technologies, ...technologies];
 
 export default function TechStack() {
   return (
-    <section className="py-24 overflow-hidden bg-foreground dark:bg-background">
-      <Container>
+    <section className="mt-20 overflow-hidden bg-foreground dark:bg-background">
+      <Container className="py-10">
         <Title label="Tecnologías" title="Stack" subtitle="Tecnológico" />
 
-        <div className="relative overflow-hidden mt-8">
+        <div className="relative overflow-hidden">
           <div className="absolute left-0 top-0 bottom-0 w-32 z-10 pointer-events-none bg-linear-to-r from-foreground dark:from-background to-transparent" />
           <div className="absolute right-0 top-0 bottom-0 w-32 z-10 pointer-events-none bg-linear-to-l from-foreground dark:from-background to-transparent" />
 
