@@ -10,7 +10,7 @@ const allTech = [...technologies, ...technologies, ...technologies];
 
 export default function TechStack() {
   return (
-    <section className="mt-20 overflow-hidden bg-foreground dark:bg-background">
+    <section className="pt-15 overflow-hidden bg-foreground dark:bg-background">
       <Container className="py-10">
         <Title label="Tecnologías" title="Stack" subtitle="Tecnológico" />
 
