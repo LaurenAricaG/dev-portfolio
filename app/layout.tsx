@@ -3,7 +3,7 @@ import "@/styles/globals.css";
 import { cn } from "@/utils/cn.utils";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Container from "@/components/layout/Container";
+import Providers from "@/components/providers";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -26,7 +26,10 @@ export default function RootLayout({
         <Header />
 
         {/* MAIN ocupa el espacio restante */}
-        <main className="flex-1 flex flex-col">{children}</main>
+        <main className="flex-1 flex flex-col">
+          {children}
+          <Providers />
+        </main>
 
         <Footer />
       </body>
