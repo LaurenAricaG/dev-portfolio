@@ -83,7 +83,7 @@
         "Proporcioné capacitación básica sobre los programas utilizados a nuevos usuarios.",
         "Realicé reportes en SQL según los requerimientos solicitados."
       ],
-      "technologies": ["SQL", "Windows Server", "Redes"]
+      "technologies": ["SQL Server", "Windows Server", "Redes"]
     },
     {
       "id": 5,
@@ -103,7 +103,7 @@
         "Participé en el desarrollo del módulo de proyectos y ventas para el CRM.",
         "Implementé una nueva interfaz de usuario para la gestión de egresos, optimizando la usabilidad."
       ],
-      "technologies": ["React", "Node.js", "MySQL"]
+      "technologies": ["PHP", "Laravel", "MySQL", "Bootstrap"]
     }
   ]
 }
