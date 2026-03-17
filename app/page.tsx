@@ -4,6 +4,9 @@ import HeroSection from "@/components/HeroSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import TechStack from "@/components/TechStack";
 
+// METADATA
+export const metadata = { title: "Inicio" };
+
 const HomePage = () => {
   return (
     <>

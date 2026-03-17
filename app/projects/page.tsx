@@ -4,6 +4,9 @@ import Title from "@/components/Tittle";
 import { Project } from "@/types/projects.type";
 import projectsData from "@/data/projects-data.json";
 
+// METADATA
+export const metadata = { title: "Proyectos" };
+
 const ProjectsPage = () => {
   const projects = projectsData.projects as Project[];
 

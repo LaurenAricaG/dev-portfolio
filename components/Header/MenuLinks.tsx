@@ -50,6 +50,19 @@ const MenuLinks = ({
     return () => window.removeEventListener("scroll", handleScroll);
   }, [pathname]);
 
+  // METADATA
+  useEffect(() => {
+    if (pathname !== "/") return;
+    const titles: Record<string, string> = {
+      hero: "Inicio",
+      projects: "Proyectos",
+      about: "Sobre Mí",
+      contact: "Contacto",
+    };
+
+    document.title = `Lauren Arica | ${titles[activeSection] ?? "Inicio"}`;
+  }, [activeSection]);
+
   return (
     <ul className={className}>
       {menuItems.map((item) => {
@@ -64,7 +77,16 @@ const MenuLinks = ({
           <li key={item.id}>
             <Link
               href={item.path}
-              onClick={onClick}
+              onClick={() => {
+                onClick?.();
+                if (item.id !== "projects") {
+                  setTimeout(() => {
+                    document
+                      .getElementById(item.id)
+                      ?.scrollIntoView({ behavior: "smooth" });
+                  }, 100);
+                }
+              }}
               className={cn(
                 "flex items-center gap-2 transition-colors",
                 itemClassName,
