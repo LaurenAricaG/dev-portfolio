@@ -15,6 +15,7 @@ import {
 
 import { DiMsqlServer } from "react-icons/di";
 import { Tech } from "@/types/tech.type";
+import { PythonIcon } from "@/components/icons/PythonIcon";
 
 export const technologies: Tech[] = [
   // FRONTEND
@@ -57,6 +58,13 @@ export const technologies: Tech[] = [
     category: "Language",
     color: "#777BB4",
     icon: SiPhp,
+  },
+
+  {
+    name: "Python",
+    category: "Language",
+    color: "#3776AB",
+    icon: PythonIcon,
   },
 
   // BACKEND

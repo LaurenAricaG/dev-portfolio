@@ -3,6 +3,8 @@
 import { useRef } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { Experience } from "@/types/experience.types";
+import { techConfig } from "@/config/tech.config";
+import useThemeStore from "@/store/useTheme";
 
 const typeStyles: Record<string, string> = {
   "Full-time":
@@ -40,6 +42,8 @@ interface CardExperienceProps {
 }
 
 const CardExperience = ({ exp, index, isLast }: CardExperienceProps) => {
+  const theme = useThemeStore((state) => state.theme);
+
   const cardRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(cardRef, { once: true, margin: "-80px" });
 
@@ -229,23 +233,41 @@ const CardExperience = ({ exp, index, isLast }: CardExperienceProps) => {
         </ul>
 
         {/* Tech pills */}
-        <div className="flex flex-wrap gap-1.5 relative">
-          {exp.technologies.map((tech, i) => (
-            <motion.span
-              key={i}
-              className="inline-flex items-center text-[11px] font-medium px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={isInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{
-                delay: index * 0.08 + 0.55 + i * 0.05,
-                type: "spring",
-                stiffness: 300,
-              }}
-              whileHover={{ scale: 1.08, transition: { duration: 0.15 } }}
-            >
-              {tech}
-            </motion.span>
-          ))}
+        <div className="flex flex-wrap gap-3">
+          {exp.technologies.map((tech, i) => {
+            const config = techConfig[tech];
+            if (!config) return null;
+
+            const Icon = config.icon;
+            const activeColor =
+              theme === "dark"
+                ? config.color
+                : config.lightColor || config.color;
+            const activeBg =
+              theme === "dark" ? `${activeColor}15` : `${activeColor}10`;
+
+            return (
+              <motion.span
+                key={i}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                transition={{
+                  delay: index * 0.08 + 0.55 + i * 0.05,
+                  type: "spring",
+                  stiffness: 300,
+                }}
+                whileHover={{ scale: 1.08, transition: { duration: 0.15 } }}
+                style={{
+                  backgroundColor: activeBg,
+                  borderColor: `${activeColor}30`,
+                }}
+                className="flex items-center gap-2 px-3 py-1.5 rounded-full border text-[11px] font-bold tracking-wide transition-all duration-300"
+              >
+                {Icon && <Icon style={{ color: activeColor }} size={18} />}
+                <span style={{ color: activeColor }}>{tech}</span>
+              </motion.span>
+            );
+          })}
         </div>
 
         {/* Links */}
