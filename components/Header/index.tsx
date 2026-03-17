@@ -6,6 +6,7 @@ import Container from "../layout/Container";
 import Navbar from "./Navbar";
 import ThemeToggle from "./ThemeToggle";
 import MenuMobile from "./MenuMobile";
+import Link from "next/link";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -34,9 +35,19 @@ const Header = () => {
               scrolled ? "py-3" : "py-4",
             )}
           >
-            <h1 className="uppercase font-semibold tracking-wide text-background dark:text-foreground">
-              Lauren Arica
-            </h1>
+            <Link
+              href="/"
+              aria-label="Lauren Arica - Ir al inicio"
+              onClick={() => {
+                if (window.location.pathname === "/") {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }
+              }}
+            >
+              <span className="uppercase font-semibold tracking-wide text-background dark:text-foreground">
+                Lauren Arica
+              </span>
+            </Link>
             <div className="flex flex-row-reverse md:flex-row items-center gap-3 md:gap-10">
               <Navbar onOpenMenu={() => setMenuOpen(true)} />
               <ThemeToggle />
