@@ -50,6 +50,19 @@ const MenuLinks = ({
     return () => window.removeEventListener("scroll", handleScroll);
   }, [pathname]);
 
+  // METADATA
+  useEffect(() => {
+    if (pathname !== "/") return;
+    const titles: Record<string, string> = {
+      hero: "Inicio",
+      projects: "Proyectos",
+      about: "Sobre Mí",
+      contact: "Contacto",
+    };
+
+    document.title = `Lauren Arica | ${titles[activeSection] ?? "Inicio"}`;
+  }, [activeSection]);
+
   return (
     <ul className={className}>
       {menuItems.map((item) => {

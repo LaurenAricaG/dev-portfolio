@@ -5,6 +5,14 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Providers from "@/components/providers";
 
+// METADATA
+export const metadata = {
+  title: {
+    template: "Lauren Arica | %s",
+    default: "Lauren Arica",
+  },
+};
+
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
