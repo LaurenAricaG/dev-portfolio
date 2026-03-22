@@ -77,7 +77,7 @@ const HeroSection = () => {
           />
 
           <LinkButton
-            href="https://res.cloudinary.com/dmj12lefm/image/upload/CV-LaurenAricaGuerrero.pdf"
+            href="https://res.cloudinary.com/dmj12lefm/image/upload/v1774194226/CV-LaurenAricaGuerrero.pdf"
             ariaLabel="Descargar currículum vitae en formato PDF"
             title="Descargar CV"
             icon={HiDocumentText}
