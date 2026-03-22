@@ -8,8 +8,7 @@ import Providers from "@/components/providers";
 // METADATA
 export const metadata = {
   title: {
-    template: "Lauren Arica | %s",
-    default: "Lauren Arica",
+    default: "Lauren Arica | Inicio",
   },
 };
 
